@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Mern stack amazon clone.",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/Haris-Mohanty/Mern-Amazon-Clone/issues"
   },
-  "homepage": "https://github.com/Haris-Mohanty/Mern-Amazon-Clone#readme"
+  "homepage": "https://github.com/Haris-Mohanty/Mern-Amazon-Clone#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1",
+    "morgan": "^1.10.0"
+  }
 }
