@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Mern stack amazon clone.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haris-Mohanty/Mern-Amazon-Clone.git"
+  },
+  "author": "Haris Mohanty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haris-Mohanty/Mern-Amazon-Clone/issues"
+  },
+  "homepage": "https://github.com/Haris-Mohanty/Mern-Amazon-Clone#readme"
+}
