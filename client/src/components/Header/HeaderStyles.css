@@ -1,0 +1,152 @@
+input {
+  width: 400px;
+  height: 38px;
+  border: none;
+  outline: none;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.search_icon {
+  background-color: #febd69;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  cursor: pointer;
+}
+
+.nav_searchbaar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  flex: 0.3;
+}
+
+ a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 2px;
+  border: 1px solid #131921;
+  border-radius: 2px;
+  padding: 8px;
+}
+
+ a:hover {
+  border: 1px solid white;
+}
+
+.cart_btn {
+  display: flex;
+  margin-left: 22px;
+  cursor: pointer;
+  margin-top: 2px;
+  padding: 8px;
+  border-radius: 2px;
+  border: 1px solid #131921;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3px;
+}
+
+.cart_btn:hover {
+  border: 1px solid white;
+}
+
+.cart_btn .icon {
+  margin-right: 10px;
+  color: #fff;
+  margin-top: 2px;
+}
+
+.cart_btn p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 11px;
+  margin-right: 10px;
+}
+/* 
+a {
+  text-decoration: none;
+} */
+
+.avtar {
+  cursor: pointer;
+}
+.avtar2 {
+  cursor: pointer;
+  background-color: #1365cf;
+}
+
+.hamburgur {
+  display: none;
+}
+
+.extrasearch {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  top: 50px;
+  width: 440px;
+}
+
+.extrasearch a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* drawer sty */
+.drawer {
+  width: 250px;
+  background-color: red;
+}
+
+@media (max-width: 800px) {
+  .hamburgur {
+    display: block;
+  }
+  .nav_btn,
+  .avtar2,
+  .avtar {
+    display: none;
+  }
+  input {
+    width: 150px;
+    margin-left: 10px;
+  }
+
+  input::placeholder {
+    visibility: hidden;
+  }
+
+  .cart_btn {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 568px) {
+  input {
+    display: none;
+  }
+
+  .search_icon {
+    /* color: #fff;
+        font-size: 18px;
+        background-color: #131921; */
+    display: none;
+  }
+}
