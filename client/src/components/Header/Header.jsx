@@ -6,8 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import Badge from "@mui/material/Badge";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Avatar from "@mui/material/Avatar";
-import {NavLink} from 'react-router-dom'
-import Haeder2 from "./Haeder2";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -33,7 +32,7 @@ const Header = () => {
           </Box>
           <Box className="right">
             <Box className="nav_btn">
-            <a to="/login">Sign in</a>
+              <a to="/login">Sign in</a>
             </Box>
             <Box className="cart_btn">
               <IconButton aria-label="cart">
@@ -41,13 +40,14 @@ const Header = () => {
                   <ShoppingCartIcon sx={{ color: "#fff", mr: 0.7, mt: 0.3 }} />
                 </Badge>
               </IconButton>
-              <Typography variant="body2" sx={{fontWeight:"bold", mr:2}}>Cart</Typography>
+              <Typography variant="body2" sx={{ fontWeight: "bold", mr: 2 }}>
+                Cart
+              </Typography>
             </Box>
             <Avatar className="avatar" />
           </Box>
         </Toolbar>
       </AppBar>
-      <Haeder2/>
     </>
   );
 };
