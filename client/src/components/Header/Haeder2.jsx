@@ -1,10 +1,16 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
 import Nav from "../../Assets/nav.jpg";
 
 const Haeder2 = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <Box sx={{ bgcolor: "#232F3E", mt: 8 }}>
+    <Box
+      display={isSmallScreen ? "none" : "block"}
+      sx={{ bgcolor: "#232F3E", mt: 8 }}
+    >
       <Box sx={{ display: "flex", justifyContent: "space-between" }}>
         <Box
           sx={{

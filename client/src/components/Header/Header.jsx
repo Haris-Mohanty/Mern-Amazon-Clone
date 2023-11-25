@@ -1,6 +1,14 @@
 import React from "react";
 import "./HeaderStyles.css";
-import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  IconButton,
+  Toolbar,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import logo from "../../Assets/amazon.png";
 import SearchIcon from "@mui/icons-material/Search";
 import Badge from "@mui/material/Badge";
@@ -9,6 +17,8 @@ import Avatar from "@mui/material/Avatar";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <>
       <AppBar component={"nav"} sx={{ bgcolor: "#131921" }}>
@@ -20,11 +30,11 @@ const Header = () => {
             alignItems={"center"}
             flex={".7"}
           >
-            <Box width={"10%"} mt={0.7}>
+            <Box width={isSmallScreen ? "45%" : "10%"} mt={0.7}>
               <img src={logo} alt="mern amazon logo" width={"100%"} />
             </Box>
             <Box className="nav_searchbaar">
-              <input type="text" />
+              <input type="text" placeholder="Search Amazon.in" />
               <Box className="search_icon">
                 <SearchIcon />
               </Box>
