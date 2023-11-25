@@ -1,11 +1,13 @@
 import React from "react";
 import "./HeaderStyles.css";
-import { AppBar, Box, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
 import logo from "../../Assets/amazon.png";
 import SearchIcon from "@mui/icons-material/Search";
-import Badge from "@mui/icons-material/Badge";
+import Badge from "@mui/material/Badge";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Avatar from "@mui/material/Avatar";
+import {NavLink} from 'react-router-dom'
+import Haeder2 from "./Haeder2";
 
 const Header = () => {
   return (
@@ -31,18 +33,21 @@ const Header = () => {
           </Box>
           <Box className="right">
             <Box className="nav_btn">
-              <a href="#">SignIn</a>
+            <a to="/login">Sign in</a>
             </Box>
             <Box className="cart_btn">
-              <Badge badgeContent={4} color="primary">
-                <ShoppingCartIcon className="icon" />
-              </Badge>
-              <p>Cart</p>
+              <IconButton aria-label="cart">
+                <Badge badgeContent={4} color="secondary">
+                  <ShoppingCartIcon sx={{ color: "#fff", mr: 0.7, mt: 0.3 }} />
+                </Badge>
+              </IconButton>
+              <Typography variant="body2" sx={{fontWeight:"bold", mr:2}}>Cart</Typography>
             </Box>
             <Avatar className="avatar" />
           </Box>
         </Toolbar>
       </AppBar>
+      <Haeder2/>
     </>
   );
 };

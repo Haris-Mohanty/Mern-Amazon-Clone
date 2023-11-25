@@ -35,7 +35,7 @@ input {
   flex: 0.3;
 }
 
- a {
+a {
   color: #fff;
   font-weight: 500;
   text-decoration: none;
@@ -45,7 +45,7 @@ input {
   padding: 8px;
 }
 
- a:hover {
+a:hover {
   border: 1px solid white;
 }
 
@@ -66,28 +66,10 @@ input {
   border: 1px solid white;
 }
 
-.cart_btn .icon {
-  margin-right: 10px;
-  color: #fff;
-  margin-top: 2px;
-}
-
-.cart_btn p {
-  color: #fff;
-  font-weight: 500;
-  font-size: 12px;
-  margin-top: 11px;
-  margin-right: 10px;
-}
-/* 
-a {
-  text-decoration: none;
-} */
-
-.avtar {
+.avatar {
   cursor: pointer;
 }
-.avtar2 {
+.avatar2 {
   cursor: pointer;
   background-color: #1365cf;
 }
