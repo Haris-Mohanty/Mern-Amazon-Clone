@@ -1,12 +1,13 @@
-import React from 'react'
-import moduleName from 'module'
+import React from "react";
+import "./MainComponentStyles.css";
+import Banner from "./Banner";
 
 const MainComponent = () => {
   return (
-    <div>
-      
+    <div className="home_section">
+      <Banner />
     </div>
-  )
-}
+  );
+};
 
-export default MainComponent
+export default MainComponent;
