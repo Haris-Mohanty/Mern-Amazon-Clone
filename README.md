@@ -45,3 +45,5 @@ This project is a full-stack e-commerce web application, serving as a clone of t
 
 ## License
 Feel free to customize this README to better fit your project and provide more specific details if needed.
+
+## Thank You❤️
